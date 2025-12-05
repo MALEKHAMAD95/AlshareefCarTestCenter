@@ -1,0 +1,17 @@
+@import './assets/styles/app.css';
+.form-item-error {
+    color: red;
+    font-size: 0.875rem;
+}
+
+.no-spinners {
+    -webkit-appearance: none; /* For Chrome, Safari, Edge */
+    -moz-appearance: textfield; /* For Firefox */
+    appearance: none; /* Standard */
+}
+
+.no-spinners::-webkit-inner-spin-button,
+.no-spinners::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

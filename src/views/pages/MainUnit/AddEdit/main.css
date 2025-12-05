@@ -1,0 +1,77 @@
+.sub-units-table table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1rem; /* Increased vertical spacing between rows */
+}
+
+.sub-units-table th,
+.sub-units-table td {
+  padding: 0.75rem 1rem; /* Consistent padding */
+  text-align: left;
+  vertical-align: middle;
+}
+
+.sub-units-table th {
+  background-color: transparent; /* No background for headers */
+  font-weight: 600;
+  color: #374151;
+  border: none; /* Remove borders from headers */
+}
+
+.sub-units-table tbody tr.sub-unit-row {
+  background-color: #f9fafb; /* Light gray background for rows */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.sub-units-table td {
+  border: none; /* Remove borders between columns */
+}
+
+.sub-units-table .borderless-input {
+  width: 100%;
+  border: none; /* Remove input borders */
+  background: transparent; /* Transparent background */
+  padding: 0.5rem 0; /* Minimal padding */
+  box-sizing: border-box;
+}
+
+.sub-units-table .borderless-input:focus {
+  outline: none; /* Remove focus outline */
+  box-shadow: none; /* Remove any default shadow on focus */
+}
+
+.sub-units-table .factor-input {
+  width: 80px; /* Narrower width for factor inputs */
+  text-align: center; /* Center the numbers */
+}
+
+.sub-units-table .text-center {
+  text-align: center; /* Center the checkbox */
+}
+
+.sub-units-table .text-right {
+  text-align: right; /* Align delete icon to the right */
+}
+
+.sub-units-table .delete-icon {
+  color: #ef4444; /* Red color for delete icon */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sub-units-table .delete-icon:hover {
+  color: #dc2626; /* Darker red on hover */
+}
+
+.add-new-record-button {
+  background-color: #3b82f6; /* Blue background */
+  color: white;
+  border-radius: 0.5rem; /* Rounded corners */
+  padding: 0.5rem 1rem;
+}
+
+.add-new-record-button:hover {
+  background-color: #2563eb; /* Darker blue on hover */
+}

@@ -1,0 +1,207 @@
+{
+    "globalTranslate": {
+        "page": "page"
+    },
+    "nav": {
+        "home": "Home",
+        "Customer": "Customer",
+        "Material": "Material",
+        "SalesMan": "Sales Man",
+        "Banks": "Banks",
+        "Sales": "Sales",
+        "Demand": "Demand",
+        "PurchaseOrder": "Purchase Order",
+        "Purchases": "Purchases",
+        "SafeDeposits": "Safe Deposits",
+        "collapseSales": {
+            "Sales": "Sales",
+            "collapseMenu": "Collapse menu item",
+            "SalesOrder": "Sales Order",
+            "MaterialsTransaction": "Material Transaction"
+        },
+        "UserDropdown": {
+            "UserManagement": "User Management",
+            "Settings": "Settings",
+            "SignOut": "Sign Out",
+            "Anonymous": "Anonymous",
+            "NoEmailAvailable": "No email available"
+        },
+        "collapsePurchases": {
+            "Purchases": "Purchases",
+            "PurchaseOrder": "Purchase Order",
+            "MaterialsTransaction": "Material Transaction",
+            "item1": "Collapse menu item 1",
+            "item2": "Collapse menu item 2"
+        },
+        "ReportMenu": {
+            "ReportMenu": "Report Menu",
+            "single": "Group single menu item",
+            "collapse": {
+                "Report": "Report",
+                "ReportDesigner": "Report Designer",
+                "ReportType": "Report Type",
+                "Targets": "Targets"
+            }
+        },
+        "PageSelector": {
+            "Control": "Control",
+            "Users": "Users",
+            "UsersRights": "Users Rights",
+            "Lookup": "Lookup"
+        },
+        "groupMenu": {
+            "groupMenu": "Group menu",
+            "single": "Group single menu item",
+            "collapse": {
+                "collapse": "Group collapse menu",
+                "item1": "Group collapse menu item 1",
+                "item2": "Group collapse menu item 2"
+            }
+        },
+        "AppointmentBooking": "Appointment Booking",
+        "Reservations": "Reservations",
+        "VehicleEntry": "Vehicle Entry",
+        "Accounting": "Accounting Screen",
+        "quickActions": "QUICK ACTIONS",
+        "quickAction": {
+            "appointmentBooking": "Appointment",
+            "reservations": "Reservations",
+            "vehicleEntry": "Vehicle Entry",
+            "accounting": "Accounting"
+        },
+        "ClientInformation": "Client Information",
+        "BranchInspections": "Branch Inspections",
+        "DeferredInspections": "Deferred Inspections",
+        "InspectorRecheckRequests": "Inspector Recheck Requests",
+        "InspectionRequestsFromInspector": "Inspection Requests From Inspector",
+        "CarEstimation": "Car Estimation",
+        "PreviousEstimations": "Previous Estimations",
+        "StartInspection": "Start Vehicle Inspection",
+        "CompleteInspections": "Complete Inspections",
+        "PreviousInspections": "Previous Inspections",
+        "CarsirInspections": "Carsir Inspections",
+        "Reports": "Reports",
+        "reports": {
+            "staffSummary": "Staff Summary",
+            "staffDetailed": "Staff Detailed",
+            "inspectionsByCheckpoints": "Inspections by Checkpoints",
+            "inspectionsByPaymentMethod": "Inspections by Payment Method",
+            "byPaymentMethod": "By Payment Method",
+            "lenders": "Lenders",
+            "lendersInspections": "Lenders Inspections",
+            "inspectionsReturned": "Inspections Returned from Sending/Auditing/Explanation",
+            "estimation": "Estimation",
+            "carsirInspectionsDetail": "Carsir Inspections Detail",
+            "numberOfCarsirInspections": "Number of Carsir Inspections",
+            "customers": "Customers",
+            "auditResponsible": "Audit/Explanation Responsible"
+        },
+        "Settings": "Settings",
+        "settings": {
+            "usersAndPermissions": "Users and Permissions",
+            "userGroups": "User Groups",
+            "permissionsList": "Permissions List",
+            "users": "Users",
+            "usersAllBranches": "Users (All Branches)",
+            "systemLists": "System Lists",
+            "banks": "Banks"
+        },
+        "system": {
+            "vehicleTypes": "Vehicle Types",
+            "vehicleBodies": "Vehicle Bodies",
+            "vehicleColors": "Vehicle Colors",
+            "countries": "Countries of Origin",
+            "fuelTypes": "Fuel Types",
+            "paymentMethods": "Payment Methods",
+            "financialInstitutions": "Financial Institutions",
+            "checkpoints": "Checkpoints",
+            "inspectionPackages": "Inspection Packages",
+            "resetCheckpoints": "Reset Checkpoints",
+            "exhibitions": "Exhibitions",
+            "cities": "Cities",
+            "yildan": "Yildan",
+            "branches": "Branches",
+            "departments": "Departments"
+        },
+        "banks": {
+            "requests": "Bank Requests",
+            "users": "Bank Users",
+            "estimation": "Bank Estimation",
+            "ads": "Bank Ads"
+        }
+    },
+    "auth": {
+        "SignIn": {
+            "Welcome": "Alshareef Car Test Center",
+            "WelcomeTitle": "Welcome",
+            "PleaseSignIn": "Please enter your credentials to sign in!",
+            "ForgotPassword": "Forgot password",
+            "NoAccountYet": "Don't have an account yet?",
+            "SignUp": "Sign up",
+            "orContinueWith": "or continue with",
+            "Email": "Email",
+            "WelcomeDescription": "Alshareef Car Test Center",
+            "Password": "Password",
+            "EmailPlaceholder": "Enter your email",
+            "PasswordPlaceholder": "Enter your password",
+            "SignIn": "Sign In",
+            "CompanyName": "Alshareef Car Test Center",
+            "SigningIn": "Signing in..."
+        },
+        "ForgotPassword": {
+            "ForgotPassword": "Forgot Password",
+            "CheckYourEmail": "Check Your Email",
+            "EmailSentMessage": "We have sent a password recovery to your email",
+            "EnterEmailMessage": "Please enter your email to receive a verification code",
+            "Continue": "Continue",
+            "BackTo": "Back to",
+            "SignIn": "Sign In"
+        }
+    },
+    "views": {
+        "ID": "ID",
+        "Name": "Name",
+        "Type": "Type",
+        "Parent": "Parent",
+        "Actions": "Actions",
+        "Lookups": "Lookups",
+        "Add": "Add",
+        "Edit": "Edit",
+        "Delete": "Delete",
+        "Error loading tableData": "Error loading table data",
+        "Deleted successfully": "Deleted successfully",
+        "Delete failed": "Delete failed",
+        "Updated successfully": "Updated successfully",
+        "Created successfully": "Created successfully",
+        "Save failed": "Save failed",
+        "lookup": {
+            "deleteLookup": "Delete Lookup",
+            "confirmDelete": "Are you sure you want to delete this lookup?",
+            "cancel": "Cancel",
+            "delete": "Delete"
+        },
+        "Lookup": {
+            "id": "ID",
+            "name": "Name",
+            "Lookup": "Lookup",
+            "type": "Type",
+             "Search": "Search",
+            "parent": "Parent",
+            "actions": "Actions",
+            "lookups": "Lookups",
+            "add": "Add",
+            "edit": "Edit",
+            "delete": "Delete",
+            "errorLoadingTableData": "Error loading table data",
+            "deletedSuccessfully": "Deleted successfully",
+            "deleteFailed": "Delete failed",
+            "updatedSuccessfully": "Updated successfully",
+            "createdSuccessfully": "Created successfully",
+            "saveFailed": "Save failed",
+            "deleteLookup": "Delete Lookup",
+            "confirmDelete": "Are you sure you want to delete this lookup?",
+            "cancel": "Cancel"
+        }
+    },
+    "ForgetPass": {}
+}
