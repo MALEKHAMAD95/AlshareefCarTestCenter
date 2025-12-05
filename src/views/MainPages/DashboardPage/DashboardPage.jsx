@@ -1,4 +1,14 @@
+import { useState, useEffect } from 'react';
+
 const DashboardPage = () => {
+    const [currentTime, setCurrentTime] = useState(new Date().toLocaleString());
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentTime(new Date().toLocaleString());
+        }, 1000);
+        return () => clearInterval(timer);
+    }, []);
     return (
         <main className="relative w-full max-w-[1100px] mx-auto flex justify-center slide-scale-container">
             <div
@@ -54,10 +64,10 @@ const DashboardPage = () => {
                     <div className="flex justify-between items-start mb-10">
                         <div>
                             <h3 className="text-slate-800 font-bold text-xl">
-                                مرححباً بك مرة أخرى يا سلطان
+                                مرحباً بك مرة أخرى يا سلطان
                             </h3>
                             <p className="text-slate-500 text-sm">
-                                {new Date().toLocaleString()}
+                                {currentTime}
                             </p>
                         </div>
                         <div className="flex -space-x-2">
