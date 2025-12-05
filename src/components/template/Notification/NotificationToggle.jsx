@@ -1,16 +1,16 @@
 import classNames from '@/utils/classNames'
 import Badge from '@/components/ui/Badge'
-import { PiBellDuotone } from 'react-icons/pi'
+import NotificationsSvg from '@/assets/svg/SystemIcons/NotificationsSvg'
 
 const NotificationToggle = ({ className, dot }) => {
     return (
         <div className={classNames('text-2xl', className)}>
             {dot ? (
                 <Badge badgeStyle={{ top: '3px', right: '6px' }}>
-                    <PiBellDuotone />
+                    <NotificationsSvg width={24} height={24}/>
                 </Badge>
             ) : (
-                <PiBellDuotone />
+                <NotificationsSvg width={24} height={24}/>
             )}
         </div>
     )

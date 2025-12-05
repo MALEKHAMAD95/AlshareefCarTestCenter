@@ -110,7 +110,6 @@ const _Notification = ({ className }) => {
                             variant="plain"
                             shape="circle"
                             size="sm"
-                            icon={<HiOutlineMailOpen className="text-xl" />}
                             onClick={onMarkAllAsRead}
                         />
                     </Tooltip>

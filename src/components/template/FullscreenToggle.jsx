@@ -1,3 +1,4 @@
+import FullIconSvg from '@/assets/svg/SystemIcons/FullIconSvg'
 import { useState } from 'react'
 import { HiArrowsPointingOut, HiArrowsPointingIn } from 'react-icons/hi2'
 
@@ -24,9 +25,9 @@ const FullscreenToggle = () => {
             aria-label={isFullscreen ? 'Exit Fullscreen' : 'Enter Fullscreen'}
         >
             {isFullscreen ? (
-                <HiArrowsPointingIn size={20} />
+                <FullIconSvg width={24} height={24} />
             ) : (
-                <HiArrowsPointingOut size={20} />
+                <FullIconSvg width={24} height={24} />
             )}
         </button>
     )

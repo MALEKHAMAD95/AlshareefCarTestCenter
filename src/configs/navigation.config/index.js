@@ -10,7 +10,7 @@ const navigationConfig = [
         path: '/home',
         title: 'Dashboard',
         translateKey: 'nav.Dashboard',
-        icon: 'home', // Maps to FcHome
+        icon: 'vehicle', // Maps to FcHome
         type: NAV_ITEM_TYPE_ITEM,
         authority: [],
         subMenu: [],

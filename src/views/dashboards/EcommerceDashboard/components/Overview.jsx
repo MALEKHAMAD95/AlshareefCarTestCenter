@@ -91,7 +91,7 @@ const Overview = ({ data }) => {
     return (
         <Card>
             <div className="flex items-center justify-between">
-                <h4>Welcome back, Ahmad</h4>
+                <h4>Welcome back, سلطان</h4>
        
                 <Select
                     className="w-[120px]"

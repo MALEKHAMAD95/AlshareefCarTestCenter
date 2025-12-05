@@ -440,7 +440,7 @@ const SalesDashboard = () => {
 
     return (
         <div>
-            {data && (
+            {/* {data && (
                 <div>
                     <div className="flex flex-col gap-4 max-w-full overflow-x-hidden">
                         <div className="flex flex-col xl:flex-row gap-4">
@@ -462,7 +462,7 @@ const SalesDashboard = () => {
                         <RecentOrder data={data.recentOrders} />
                     </div>
                 </div>
-            )}
+            )} */}
         </div>
     )
 }

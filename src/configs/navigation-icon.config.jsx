@@ -46,7 +46,8 @@ import {
     TbChartLine,
     TbAd,
 } from 'react-icons/tb'
-import BlankSvg from '@/assets/svg/SystemIcons/turn'
+import BlankSvg from '@/assets/svg/SystemIcons/TurnSvg'
+import TurnSvg from '@/assets/svg/SystemIcons/TurnSvg'
 
 const iconStyle = { fontSize: '1.15rem' }
 
@@ -62,7 +63,7 @@ const navigationIcon = {
     leads: <FcReading />,
     
     // Main Navigation Icons
-    appointment: <BlankSvg height={18} width={18} />,
+    appointment: <TurnSvg height={18} width={18} />,
     reservations: <TbClipboardList style={iconStyle} />,
     vehicle: <TbCar style={iconStyle} />,
     accounting: <TbCalculator style={iconStyle} />,

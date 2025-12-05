@@ -22,6 +22,10 @@ import {
 } from '@/constants/theme.constant'
 import { TbX, TbSearch, TbArrowRight, TbUserPlus, TbPhoneCall, TbCalendar, TbClipboard, TbChevronRight, TbMoon, TbSun } from 'react-icons/tb'
 import { THEME_ENUM } from '@/constants/theme.constant'
+import TurnSvg from '@/assets/svg/SystemIcons/TurnSvg'
+import ReservationsSvg from '@/assets/svg/SystemIcons/ReservationsSvg'
+import VehicleEntrySvg from '@/assets/svg/SystemIcons/VehicleEntrySvg'
+import AccountingScreenSvg from '@/assets/svg/SystemIcons/AccountingScreenSvg'
 
 const sideNavStyle = {
     width: SIDE_NAV_WIDTH,
@@ -36,10 +40,10 @@ const sideNavCollapseStyle = {
 const DEFAULT_COMPANY_NAME = APP_NAME || 'DeepCRM'
 
 const quickActions = [
-    { key: 'appointmentBooking', label: 'حجز دور', icon: TbCalendar, path: '/appointment-booking' },
-    { key: 'reservations', label: 'الحجوزات', icon: TbClipboard, path: '/reservations' },
-    { key: 'vehicleEntry', label: 'إدخال المركبة', icon: TbPhoneCall, path: '/vehicle-entry' },
-    { key: 'accounting', label: 'شاشة المحاسبة', icon: TbUserPlus, path: '/accounting' },
+    { key: 'appointmentBooking', label: 'حجز دور', icon: TurnSvg , path: '/appointment-booking' },
+    { key: 'reservations', label: 'الحجوزات', icon: ReservationsSvg, path: '/reservations' },
+    { key: 'vehicleEntry', label: 'إدخال المركبة', icon: VehicleEntrySvg, path: '/vehicle-entry' },
+    { key: 'accounting', label: 'شاشة المحاسبة', icon: AccountingScreenSvg, path: '/accounting' },
 ]
 
 const SideNav = ({
@@ -291,7 +295,7 @@ const SideNav = ({
                             <TbSearch className="app-side-bar__search-icon" />
                             <input
                                 type="text"
-                                placeholder={t('nav.search', 'Search...')}
+                                placeholder={t('nav.search', 'بحث...')}
                                 className="app-side-bar__search-input"
                             />
                             <button className="app-side-bar__search-button">

@@ -14,6 +14,7 @@ import {
     FcSettings,
     FcList
 } from 'react-icons/fc'
+import SettingsSvg from '@/assets/svg/SystemIcons/SettingsSvg'
 
 const pageList = [
     {
@@ -57,7 +58,7 @@ const _PageSelector = ({ className }) => {
 
     const selectedPage = (
         <div className={classNames(className, 'flex items-center')}>
-            <FcSettings size={24} /> {/* Replaced LuFileStack with FcSettings */}
+            <SettingsSvg width={24} height={24} /> {/* Replaced LuFileStack with FcSettings */}
         </div>
     )
 
