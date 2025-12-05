@@ -1,21 +1,29 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 
 const DashboardPage = () => {
-    const [currentTime, setCurrentTime] = useState(new Date().toLocaleString());
+    const [currentTime, setCurrentTime] = useState(new Date().toLocaleString())
+    const [isBlinking, setIsBlinking] = useState(true)
 
     useEffect(() => {
         const timer = setInterval(() => {
-            setCurrentTime(new Date().toLocaleString());
-        }, 1000);
-        return () => clearInterval(timer);
-    }, []);
+            setCurrentTime(new Date().toLocaleString())
+        }, 1000)
+        return () => clearInterval(timer)
+    }, [])
+
+    useEffect(() => {
+        const blinkTimer = setInterval(() => {
+            setIsBlinking((prev) => !prev)
+        }, 500)
+        return () => clearInterval(blinkTimer)
+    }, [])
     return (
-        <main className="relative w-full max-w-[1100px] mx-auto flex justify-center slide-scale-container">
+        <main className="relative w-full max-w-[1100px] mx-auto flex justify-center slide-scale-container p-4 lg:p-0">
             <div
                 id="slide-container"
-                className="slide-wrapper bg-white rounded-xl overflow-hidden relative shadow-2xl shadow-black/50 flex"
+                className="slide-wrapper bg-white rounded-xl overflow-hidden relative shadow-2xl shadow-black/50 flex flex-col lg:flex-row"
             >
-                <div className="w-1/3 bg-slate-900 relative overflow-hidden flex flex-col p-10 justify-between">
+                <div className="w-full lg:w-1/3 bg-slate-900 relative overflow-hidden flex flex-col p-6 lg:p-10 justify-between">
                     <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none">
                         <div className="absolute -top-10 -left-10 w-64 h-64 bg-orange-600 rounded-full blur-3xl mix-blend-screen"></div>
                         <div className="absolute bottom-10 right-10 w-80 h-80 bg-orange-600 rounded-full blur-3xl mix-blend-screen"></div>
@@ -23,7 +31,9 @@ const DashboardPage = () => {
 
                     <div className="relative z-10">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/10 backdrop-blur-md mb-6">
-                            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+                            <span
+                                className={`w-2 h-2 rounded-full bg-green-400 transition-opacity duration-300 ${isBlinking ? 'opacity-100' : 'opacity-0'}`}
+                            ></span>
                             <span className="text-xs font-medium text-slate-300 tracking-wider">
                                 LIVE DATA
                             </span>
@@ -36,31 +46,27 @@ const DashboardPage = () => {
                             </span>
                         </h2>
                         <p className="text-slate-400 leading-relaxed">
-             مرحباً بك في نظام مركز الشريف لاختبار المركبات
+                            مرحباً بك في نظام مركز الشريف لاختبار المركبات
                         </p>
                     </div>
 
                     <div className="relative z-10 space-y-4">
                         <div className="flex items-center gap-3 p-3 rounded-lg bg-white/5 border border-white/5">
-                            <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-400 font-bold">
-                                
-                            </div>
+                            <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-400 font-bold"></div>
                             <div className="text-sm text-slate-300">
-                               صفحة التحليلات الرئيسية
+                                صفحة التحليلات الرئيسية
                             </div>
                         </div>
                         <div className="flex items-center gap-3 p-3 rounded-lg bg-white/5 border border-white/5">
-                            <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-400 font-bold">
-                                
-                            </div>
+                            <div className="w-8 h-8 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-400 font-bold"></div>
                             <div className="text-sm text-slate-300">
-                               صفحة الاحصائات الرئيسية
+                                صفحة الاحصائات الرئيسية
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="w-2/3 bg-slate-50 p-10 relative">
+                <div className="w-full lg:w-2/3 bg-slate-50 p-6 lg:p-10 relative">
                     <div className="flex justify-between items-start mb-10">
                         <div>
                             <h3 className="text-slate-800 font-bold text-xl">
@@ -87,14 +93,16 @@ const DashboardPage = () => {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-6 mb-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                         <div className="bg-white p-5 rounded-xl complex-shadow border border-slate-100 relative overflow-hidden group">
                             <div className="absolute top-0 right-0 w-20 h-20 bg-orange-50 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-110"></div>
                             <div className="relative z-10">
                                 <p className="text-xs font-bold text-orange-500 uppercase tracking-wider mb-1">
-إدخال                                </p> 
+                                    إدخال{' '}
+                                </p>
                                 <h4 className="text-3xl font-bold text-slate-800">
- مركبة                                </h4>
+                                    مركبة{' '}
+                                </h4>
                                 {/* <div className="mt-3 flex items-center text-xs font-semibold text-green-600">
                                     <svg
                                         className="w-3 h-3 mr-1"
@@ -118,17 +126,13 @@ const DashboardPage = () => {
                             <div className="relative z-10">
                                 <p className="text-xs font-bold text-orange-500 uppercase tracking-wider mb-1">
                                     اضافة
-                                </p> 
+                                </p>
                                 <h4 className="text-3xl font-bold text-slate-800">
-الإستقبال                                </h4>
+                                    الإستقبال{' '}
+                                </h4>
                                 <div className="mt-3 flex items-center text-xs font-semibold text-green-600">
-                                    <svg
-                                        className="w-3 h-3 mr-1"
-                           
-                                    >
-                                        <path
-                                 
-                                        ></path>
+                                    <svg className="w-3 h-3 mr-1">
+                                        <path></path>
                                     </svg>
                                     <span> </span>
                                 </div>
@@ -164,12 +168,11 @@ const DashboardPage = () => {
                             }}
                         >
                             <pس className="text-xs font-bold text-white/80 uppercase tracking-wider mb-1">
-                              
-تقرير 
+                                تقرير
                             </pس>
 
                             <h4 className="text-3xl font-bold text-white">
-                               سابق
+                                سابق
                             </h4>
 
                             <div className="mt-3 w-full bg-black/20 rounded-full h-1.5">
