@@ -48,8 +48,19 @@ import {
 } from 'react-icons/tb'
 import BlankSvg from '@/assets/svg/SystemIcons/TurnSvg'
 import TurnSvg from '@/assets/svg/SystemIcons/TurnSvg'
+import ClientInformationSvg from '@/assets/svg/SystemIcons/ClientInformationSvg'
+import GuessCarsSvg from '@/assets/svg/SystemIcons/GuessCarsSvg'
+import InspectorRecheckRequestsSvg from '@/assets/svg/SystemIcons/InspectorRecheckRequestsSvg'
+import AccountingScreenSvg from '@/assets/svg/SystemIcons/AccountingScreenSvg'
+import RequestAssignInspectionFromInspectorsSvg from '@/assets/svg/SystemIcons/RequestAssignInspectionFromInspectorsSvg'
+import AllCarsInspectionsSvg from '@/assets/svg/SystemIcons/AllCarsInspectionsSvg'
+import CarsserSvg from '@/assets/svg/SystemIcons/CarsserSvg'
+import OldInspectionsSvg from '@/assets/svg/SystemIcons/OldInspectionsSvg'
+import OldValuationSvg from '@/assets/svg/SystemIcons/OldValuationSvg'
+import StartVehicleInspectionSvg from '@/assets/svg/SystemIcons/StartVehicleInspectionSvg'
+import SettingsSvg from '@/assets/svg/SystemIcons/SettingsSvg'
 
-const iconStyle = { fontSize: '1.15rem' }
+const iconStyle = { fontSize: '1.35rem' }
 
 const navigationIcon = {
     home: <FcHome />,
@@ -66,22 +77,22 @@ const navigationIcon = {
     appointment: <TurnSvg height={18} width={18} />,
     reservations: <TbClipboardList style={iconStyle} />,
     vehicle: <TbCar style={iconStyle} />,
-    accounting: <TbCalculator style={iconStyle} />,
-    client: <TbUser style={iconStyle} />,
-    branchInspections: <TbBuilding style={iconStyle} />,
+    accounting: <AccountingScreenSvg  height={25} width={25} />   ,
+    client: <ClientInformationSvg height={25} width={25} />,
+    branchInspections: <AllCarsInspectionsSvg height={25} width={25} />,
     deferred: <TbClock style={iconStyle} />,
-    recheck: <TbRefresh style={iconStyle} />,
-    inspectionRequests: <TbFileText style={iconStyle} />,
-    estimation: <TbChartBar style={iconStyle} />,
-    previousEstimations: <TbHistory style={iconStyle} />,
-    startInspection: <TbBrandSpeedtest style={iconStyle} />,
-    complete: <TbChecklist style={iconStyle} />,
-    previousInspections: <TbHistory style={iconStyle} />,
-    carsir: <TbCar style={iconStyle} />,
+    recheck: <InspectorRecheckRequestsSvg height={25} width={25} />,
+    inspectionRequests:  <RequestAssignInspectionFromInspectorsSvg height={25} width={25} />,
+    estimation: <GuessCarsSvg height={25} width={25} />   ,
+    previousEstimations:  <OldValuationSvg height={25} width={25} />   , 
+    startInspection: <StartVehicleInspectionSvg height={25} width={25} />   , 
+    complete: <TbChecklist style={{ fontSize: '1.7rem' }} />,
+    previousInspections: <OldInspectionsSvg style={iconStyle} />,
+    carsir: <CarsserSvg style={iconStyle} />,
     
     // Reports & Settings
     reports: <TbFileAnalytics style={{ fontSize: '1.15rem', color: '#004CC8' }} />,
-    settings: <TbSettings style={{ fontSize: '1.15rem', color: '#10B981' }} />,
+    settings: <SettingsSvg height={25} width={25} />,
     
     // Reports Submenu Icons
     staffSummary: <TbUsers style={iconStyle} />,

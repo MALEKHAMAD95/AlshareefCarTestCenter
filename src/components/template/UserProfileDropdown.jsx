@@ -21,7 +21,7 @@ const _UserDropdown = () => {
     }
 
     const avatarProps = {
-        ...(avatar ? { src: avatar } : { icon: <FcBusinessman /> }), // Replaced PiUserDuotone
+        ...(avatar ? { src: avatar } : { icon: '' }), // Replaced PiUserDuotone
     }
 
     return (
