@@ -19,7 +19,7 @@
   }
 
   .fc-theme-standard td {
-    @apply bg-gray-50 dark:bg-gray-900;
+    @apply bg-gray-50 dark:bg-slate-900;
   }
 
   .fc .fc-col-header-cell-cushion {
@@ -35,7 +35,7 @@
   }
 
   .fc-view {
-    @apply rounded-xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800;
+    @apply rounded-xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-slate-900;
   }
 
   .fc-daygrid-dot-event .fc-event-title {

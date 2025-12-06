@@ -87,7 +87,7 @@ const RevenueByChannel = ({ data }) => {
                     className="bg-orange-200 dark:opacity-70"
                 />
             </div>
-            <div className="bg-gray-100 dark:bg-gray-900 rounded-xl p-4 mt-8">
+            <div className="bg-gray-100 dark:bg-slate-900 rounded-xl p-4 mt-8">
                 <div className="grid grid-cols-3">
                     <DisplayColumn
                         icon={<TbShoppingCart />}

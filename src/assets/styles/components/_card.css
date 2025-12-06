@@ -1,7 +1,7 @@
 @layer components {
 
   .card {
-    @apply bg-white dark:bg-gray-800 rounded-2xl ;
+    @apply bg-white dark:bg-slate-900 rounded-2xl ;
   }
   
   .card-border {

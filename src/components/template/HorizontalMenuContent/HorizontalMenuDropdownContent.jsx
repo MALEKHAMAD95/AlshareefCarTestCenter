@@ -39,7 +39,7 @@ const MenuItem = ({ children, className, active, ...rest }) => {
         <div
             className={classNames(
                 'cursor-pointer font-semibold px-3 rounded-lg flex items-center w-full whitespace-nowrap gap-x-2 transition-colors duration-150 hover:text-gray-900 hover:bg-gray-100 dark:hover:text-gray-100 dark:hover:bg-gray-800',
-                active && 'bg-gray-100 dark:bg-gray-800',
+                active && 'bg-gray-100 dark:bg-slate-900',
                 className,
             )}
             role="menuitem"
@@ -424,7 +424,7 @@ const HorizontalMenuDropdownContent = (props) => {
 
     return (
         <div
-            className="rounded-2xl bg-white dark:bg-gray-900 ring-0 shadow-[0px_48px_64px_-16px_rgba(0,0,0,0.25)] border border-gray-100 dark:border-gray-800 focus:outline-hidden min-w-[180px]"
+            className="rounded-2xl bg-white dark:bg-slate-900 ring-0 shadow-[0px_48px_64px_-16px_rgba(0,0,0,0.25)] border border-gray-100 dark:border-gray-800 focus:outline-hidden min-w-[180px]"
             style={style}
         >
             {layoutMeta?.layout === 'default' && (

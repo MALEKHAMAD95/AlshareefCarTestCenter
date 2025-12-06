@@ -34,7 +34,7 @@ const StatisticCard = (props) => {
         <button
             className={classNames(
                 'p-4 rounded-2xl cursor-pointer ltr:text-left rtl:text-right transition duration-150 outline-hidden',
-                active && 'bg-white dark:bg-gray-900 shadow-md',
+                active && 'bg-white dark:bg-slate-900 shadow-md',
             )}
             onClick={() => onClick(label)}
         >

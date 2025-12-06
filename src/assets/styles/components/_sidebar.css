@@ -1,6 +1,6 @@
 /* CRM Design System Variables */
 :root {
-    --crm-primary: #004CC8;
+    --crm-primary: #4b64a8;
     --crm-success: #10B981;
     --crm-warning: #F59E0B;
     --crm-danger: #EF4444;
@@ -334,7 +334,7 @@
 
 .app-side-bar__nav-link:hover {
     color: var(--app-side-bar-text-active);
-    background-color: var(--app-side-bar-hover);
+    background-color: #e377393b;
 }
 
 .app-side-bar__nav-item--active .app-side-bar__nav-link {
@@ -577,7 +577,7 @@
     width: 38px;
     height: 38px;
     border-radius: 0.625rem;
-    background-color: var(--app-side-bar-primary);
+    background-color: #e37839;
     overflow: hidden;
     display: flex;
     align-items: center;

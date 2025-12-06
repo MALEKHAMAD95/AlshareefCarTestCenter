@@ -8,7 +8,7 @@ const BottomStickyBar = ({ children }) => {
     return (
         <div
             className={classNames(
-                'bottom-0 left-0 right-0 z-10 mt-8 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 -mx-4 sm:-mx-8 py-4',
+                'bottom-0 left-0 right-0 z-10 mt-8 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900 -mx-4 sm:-mx-8 py-4',
                 type === LAYOUT_CONTENT_OVERLAY ? 'fixed' : 'sticky',
             )}
         >

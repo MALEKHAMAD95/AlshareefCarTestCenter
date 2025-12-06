@@ -69,7 +69,7 @@ const ContentOverlay = ({ children }) => {
                                 {pageBackgroundType === 'plain' ? (
                                     <div
                                         className={classNames(
-                                            'bg-white dark:bg-gray-900 rounded-2xl',
+                                            'bg-white dark:bg-slate-900 rounded-2xl',
                                             pageContainerGutterClass,
                                         )}
                                     >

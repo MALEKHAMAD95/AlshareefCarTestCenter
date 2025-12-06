@@ -1597,7 +1597,7 @@ function AddOrder() {
     const lineNumbers = getLineNumbers(filteredOrderTransactions)
 
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-6 relative">
+        <div className="min-h-screen bg-gray-50 dark:bg-slate-900 p-6 relative">
             {loading && <LoaderSpinner />}
             <style>
                 {`
@@ -1636,7 +1636,7 @@ function AddOrder() {
                 </Button>
             </div>
 
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 mb-6">
+            <div className="bg-white dark:bg-slate-900 rounded-lg p-6 mb-6">
                 <form className="grid grid-cols-1 lg:grid-cols-6 gap-5">
                     <div className="col-span-1">
                         <label
@@ -1880,7 +1880,7 @@ function AddOrder() {
                 </div>
 
                 <div className="overflow-x-auto">
-                    <table className="w-full bg-white dark:bg-gray-800 shadow-sm rounded-md">
+                    <table className="w-full bg-white dark:bg-slate-900 shadow-sm rounded-md">
                         <thead>
                             <tr className="bg-gray-100 dark:bg-gray-700">
                                 <DndContext
@@ -1941,7 +1941,7 @@ function AddOrder() {
                                     return (
                                         <tr
                                             key={transaction.id}
-                                            className={`text-sm ${isChild ? 'bg-blue-100 dark:bg-blue-900' : 'bg-white dark:bg-gray-800'}`}
+                                            className={`text-sm ${isChild ? 'bg-blue-100 dark:bg-blue-900' : 'bg-white dark:bg-slate-900'}`}
                                         >
                                             {orderTableColumns.order.map(
                                                 (column) =>
@@ -2613,7 +2613,7 @@ function AddOrder() {
                 </div>
 
                 <div className="overflow-x-auto">
-                    <table className="w-full bg-white dark:bg-gray-800 shadow-sm rounded-md">
+                    <table className="w-full bg-white dark:bg-slate-900 shadow-sm rounded-md">
                         <thead>
                             <tr className="bg-gray-100 dark:bg-gray-700">
                                 <DndContext
@@ -2658,7 +2658,7 @@ function AddOrder() {
                                 return (
                                     <tr
                                         key={line.id}
-                                        className="text-sm bg-white dark:bg-gray-800"
+                                        className="text-sm bg-white dark:bg-slate-900"
                                     >
                                         {generalTableColumns.order.map(
                                             (column) =>
@@ -3055,7 +3055,7 @@ function AddOrder() {
                     </table>
                 </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 mb-6">
+            <div className="bg-white dark:bg-slate-900 rounded-lg p-6 mb-6">
                 <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-100 mb-4">
                     {t(`${translationPath}Notes`)}
                 </h2>
@@ -3108,7 +3108,7 @@ function AddOrder() {
                     <h2 className="text-lg font-semibold text-gray-700 mb-4">
                         {t(`${translationPath}Totals`)}
                     </h2>
-                    <div className="bg-white   dark:bg-gray-800  p-4 rounded-md shadow-sm">
+                    <div className="bg-white   dark:bg-slate-900  p-4 rounded-md shadow-sm">
                         <div className="flex justify-between mb-2 text-sm">
                             <Tag className="text-red-600 bg-blue-100 dark:text-red-100 dark:bg-red-500/20 border-0">
                                 <span className="font-medium text-gray-600">

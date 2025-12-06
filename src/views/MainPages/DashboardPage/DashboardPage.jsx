@@ -185,22 +185,22 @@ const DashboardPage = () => {
 
                     <div className="bg-orange-50/50 rounded-xl p-6 border border-orange-100">
                         <h5 className="font-bold text-orange-900 mb-3">
-                            Analysis Summary
+                              projection
                         </h5>
                         <p className="text-orange-800/80 text-sm leading-relaxed">
                             The{' '}
                             <span className="font-bold text-orange-600">
-                                Q3 projection
+                                projection projection
                             </span>{' '}
-                            exceeds expectations due to the new{' '}
+                            projection projection projection projection projection new{' '}
                             <span className="italic">
-                                optimization algorithm
+                                  projection
                             </span>
                             . We observed a{' '}
                             <span className="bg-white px-1 py-0.5 rounded shadow-sm text-orange-700 font-medium border border-orange-100">
-                                240% increase
+                           
                             </span>{' '}
-                            in processing speed across all nodes.
+                            in projection projection projection projection projection.
                         </p>
                     </div>
                 </div>

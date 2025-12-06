@@ -1921,7 +1921,7 @@ function EditOrder() {
     const lineNumbers = getLineNumbers(filteredOrderTransactions)
     // const lineNumbers = getLineNumbers(orderTransactions);
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-6 relative">
+        <div className="min-h-screen bg-gray-50 dark:bg-slate-900 p-6 relative">
             {loading && <LoaderSpinner />}
             <style>
                 {`
@@ -1960,7 +1960,7 @@ function EditOrder() {
                 </Button>
             </div>
 
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 mb-6">
+            <div className="bg-white dark:bg-slate-900 rounded-lg p-6 mb-6">
                 <form className="grid grid-cols-1 lg:grid-cols-6 gap-5">
                     <div className="col-span-1">
                         <label
@@ -2204,7 +2204,7 @@ function EditOrder() {
                 </div>
 
                 <div className="overflow-x-auto">
-                    <table className="w-full bg-white dark:bg-gray-800 shadow-sm rounded-md">
+                    <table className="w-full bg-white dark:bg-slate-900 shadow-sm rounded-md">
                         <thead>
                             <tr className="bg-gray-100 dark:bg-gray-700">
                                 <DndContext
@@ -2265,7 +2265,7 @@ function EditOrder() {
                                     return (
                                         <tr
                                             key={transaction.id}
-                                            className={`text-sm ${isChild ? 'bg-blue-100 dark:bg-blue-900' : 'bg-white dark:bg-gray-800'}`}
+                                            className={`text-sm ${isChild ? 'bg-blue-100 dark:bg-blue-900' : 'bg-white dark:bg-slate-900'}`}
                                         >
                                             {orderTableColumns.order.map((column) =>
                                                 orderTableColumns.visible[column] && (
@@ -2673,7 +2673,7 @@ function EditOrder() {
                 </div>
 
                 <div className="overflow-x-auto">
-                    <table className="w-full bg-white dark:bg-gray-800 shadow-sm rounded-md">
+                    <table className="w-full bg-white dark:bg-slate-900 shadow-sm rounded-md">
                         <thead>
                             <tr className="bg-gray-100 dark:bg-gray-700">
                                 <DndContext
@@ -2718,7 +2718,7 @@ function EditOrder() {
                                 return (
                                     <tr
                                         key={line.id}
-                                        className="text-sm bg-white dark:bg-gray-800"
+                                        className="text-sm bg-white dark:bg-slate-900"
                                     >
                                         {generalTableColumns.order.map(
                                             (column) =>
@@ -3107,7 +3107,7 @@ function EditOrder() {
                     </table>
                 </div>
             </div>
-            <div className="bg-white dark:bg-gray-800 rounded-lg p-6 mb-6">
+            <div className="bg-white dark:bg-slate-900 rounded-lg p-6 mb-6">
                 <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-100 mb-4">
                     {t(`${translationPath}Notes`)}
                 </h2>

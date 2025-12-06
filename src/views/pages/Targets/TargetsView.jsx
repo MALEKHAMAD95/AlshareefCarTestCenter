@@ -1,7 +1,7 @@
  const TargetsView = () => {
     return (
-        <div className="rounded-2xl mt-40 bg-gray-100 dark:bg-gray-900 flex flex-col items-center justify-center p-4 transition-colors duration-300">
-            <div className="max-w-2xl w-full bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 text-center">
+        <div className="rounded-2xl mt-40 bg-gray-100 dark:bg-slate-900 flex flex-col items-center justify-center p-4 transition-colors duration-300">
+            <div className="max-w-2xl w-full bg-white dark:bg-slate-900 rounded-lg shadow-lg p-8 text-center">
                 <div className="mb-6">
                     <svg
                         className="w-32 h-32 mx-auto text-blue-500"

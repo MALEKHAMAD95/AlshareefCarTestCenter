@@ -41,7 +41,7 @@ const InventoryView = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Car Images Section */}
 <div className="md:col-span-2">
-      <Card className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+      <Card className="bg-white dark:bg-slate-900 shadow-lg rounded-lg overflow-hidden">
         <Card className="p-4 border-b border-gray-200 dark:border-gray-700">
           <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
             Car Images
@@ -215,7 +215,7 @@ const InventoryView = () => {
 export default InventoryView;
 
 //  <div className="md:col-span-2">
-//       <Card className="bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+//       <Card className="bg-white dark:bg-slate-900 shadow-lg rounded-lg overflow-hidden">
 //         <Card className="p-4 border-b border-gray-200 dark:border-gray-700">
 //           <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200">
 //             Car Images
