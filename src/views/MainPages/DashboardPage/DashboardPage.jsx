@@ -23,6 +23,7 @@ const DashboardPage = () => {
                 id="slide-container"
                 className="slide-wrapper bg-white rounded-xl overflow-hidden relative shadow-2xl shadow-black/50 flex flex-col lg:flex-row"
             >
+                
                 <div className="w-full lg:w-1/3 bg-slate-900 relative overflow-hidden flex flex-col p-6 lg:p-10 justify-between">
                     <div className="absolute top-0 left-0 w-full h-full opacity-30 pointer-events-none">
                         <div className="absolute -top-10 -left-10 w-64 h-64 bg-orange-600 rounded-full blur-3xl mix-blend-screen"></div>
@@ -41,9 +42,7 @@ const DashboardPage = () => {
                         <h2 className="text-4xl font-bold text-white leading-tight mb-4">
                             الشاشة الرئيسية
                             <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-yellow-400">
-                                Performance
-                            </span>
+                   
                         </h2>
                         <p className="text-slate-400 leading-relaxed">
                             مرحباً بك في نظام مركز الشريف لاختبار المركبات

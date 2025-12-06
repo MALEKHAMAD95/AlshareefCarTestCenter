@@ -5,11 +5,11 @@ import { APP_NAME } from '@/configs/app.config'
 
 const FooterContent = () => {
     return (
-        <div className="flex items-center justify-center flex-auto w-full">
+        <div className="flex items-start justify-end flex-auto w-full text-xs opacity-60">
             <span>
-                Copyright &copy; {`${new Date().getFullYear()}`}{' '}
-                <span className="font-semibold">{`${APP_NAME}`}</span> All
-                rights reserved.
+               All Copyright &copy; {`${new Date().getFullYear()}`}{' '}
+                <span className="font-semibold">{`${APP_NAME}`}</span> 
+               
             </span>
 
         </div>
