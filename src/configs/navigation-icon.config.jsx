@@ -1,7 +1,6 @@
 import {
     FcHome,
     FcSafe,
-    FcCollaboration,
     FcBusinessman,
     FcBusinessContact,
     FcMoneyTransfer,
@@ -9,25 +8,16 @@ import {
     FcGallery,
     FcReading,
 } from 'react-icons/fc'
-import { 
-    TbFileAnalytics, 
-    TbSettings,
+import {
     TbCalendar,
     TbClipboardList,
     TbCar,
-    TbCalculator,
     TbUser,
     TbBuilding,
     TbClock,
-    TbRefresh,
-    TbFileText,
-    TbChartBar,
     TbChecklist,
-    TbHistory,
-    TbBrandSpeedtest,
     TbUsers,
     TbShield,
-    TbList,
     TbUserCircle,
     TbCarCrane,
     TbPalette,
@@ -42,7 +32,6 @@ import {
     TbHome,
     TbBriefcase,
     TbFileInvoice,
-    TbWallet,
     TbChartLine,
     TbAd,
 } from 'react-icons/tb'
@@ -59,6 +48,10 @@ import OldInspectionsSvg from '@/assets/svg/SystemIcons/OldInspectionsSvg'
 import OldValuationSvg from '@/assets/svg/SystemIcons/OldValuationSvg'
 import StartVehicleInspectionSvg from '@/assets/svg/SystemIcons/StartVehicleInspectionSvg'
 import SettingsSvg from '@/assets/svg/SystemIcons/SettingsSvg'
+import ReportSvg from '@/assets/svg/SystemIcons/ReportSvg'
+import VehicleEntrySvg from '@/assets/svg/SystemIcons/VehicleEntrySvg'
+import { BiHomeAlt } from 'react-icons/bi'
+import ReservationsSvg from '@/assets/svg/SystemIcons/ReservationsSvg'
 
 const iconStyle = { fontSize: '1.35rem' }
 
@@ -72,28 +65,30 @@ const navigationIcon = {
     expenses: <FcMoneyTransfer />,
     gallery: <FcGallery />,
     leads: <FcReading />,
-    
+  Dashboard: <BiHomeAlt />,
     // Main Navigation Icons
-    appointment: <TurnSvg height={18} width={18} />,
-    reservations: <TbClipboardList style={iconStyle} />,
-    vehicle: <TbCar style={iconStyle} />,
-    accounting: <AccountingScreenSvg  height={25} width={25} />   ,
+    appointment: <TurnSvg height={25} width={25} />,
+    reservations: <ReservationsSvg  height={25} width={25} />,
+    vehicle: <VehicleEntrySvg height={25} width={25} />,
+    accounting: <AccountingScreenSvg height={25} width={25} />,
     client: <ClientInformationSvg height={25} width={25} />,
     branchInspections: <AllCarsInspectionsSvg height={25} width={25} />,
     deferred: <TbClock style={iconStyle} />,
     recheck: <InspectorRecheckRequestsSvg height={25} width={25} />,
-    inspectionRequests:  <RequestAssignInspectionFromInspectorsSvg height={25} width={25} />,
-    estimation: <GuessCarsSvg height={25} width={25} />   ,
-    previousEstimations:  <OldValuationSvg height={25} width={25} />   , 
-    startInspection: <StartVehicleInspectionSvg height={25} width={25} />   , 
+    inspectionRequests: (
+        <RequestAssignInspectionFromInspectorsSvg height={25} width={25} />
+    ),
+    estimation: <GuessCarsSvg height={25} width={25} />,
+    previousEstimations: <OldValuationSvg height={25} width={25} />,
+    startInspection: <StartVehicleInspectionSvg height={25} width={25} />,
     complete: <TbChecklist style={{ fontSize: '1.7rem' }} />,
-    previousInspections: <OldInspectionsSvg style={iconStyle} />,
+    previousInspections: <OldInspectionsSvg height={25} width={25} />,
     carsir: <CarsserSvg style={iconStyle} />,
-    
+
     // Reports & Settings
-    reports: <TbFileAnalytics style={{ fontSize: '1.15rem', color: '#004CC8' }} />,
+    reports: <ReportSvg height={25} width={25} />,
     settings: <SettingsSvg height={25} width={25} />,
-    
+
     // Reports Submenu Icons
     staffSummary: <TbUsers style={iconStyle} />,
     staffDetailed: <TbUserCircle style={iconStyle} />,
@@ -102,7 +97,7 @@ const navigationIcon = {
     lenders: <TbBuildingBank style={iconStyle} />,
     customers: <TbUser style={iconStyle} />,
     auditResponsible: <TbShield style={iconStyle} />,
-    
+
     // Settings Submenu Icons
     userGroups: <TbUsers style={iconStyle} />,
     permissions: <TbShield style={iconStyle} />,
